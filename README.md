@@ -23,6 +23,7 @@ Itens pedido: produtos e quantidades associados a cada pedido.
 # Casos de negocio
 
 Caso 1: Quais produtos custam mais de R$ 100?
+
 **Comando SQL:**
 
 SELECT nome, preco
