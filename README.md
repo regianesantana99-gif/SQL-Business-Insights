@@ -33,6 +33,7 @@ WHERE preco > 100;
 **Objetivo:** Selecionar o nome e o preço dos produtos cadastrados e filtrar os registros para exibir apenas aqueles onde preço seja superior a R$ 100.
 
 Caso 2: Quais são os produtos mais caros?
+
 **Comando SQL:**
 
 SELECT nome, preco
@@ -42,6 +43,7 @@ ORDER BY preco DESC;
 **Objetivo:** Selecionar o nome e o preço dos produtos cadastrados e ordenar pelo preço em ordem decrescente, onde vai ser exibido primeiro os produtos mais caros.
 
 Caso 3: Quantos pedidos existem em cada status?
+
 **Comando SQL:**
 
 SELECT status, COUNT(*) AS total_pedidos
@@ -52,6 +54,7 @@ ORDER BY total_pedidos DESC;
 **Objetivo:** Agrupar os pedidos por status, contar quantos pedidos existem em cada grupo e ordenar os resultados em ordem decrescente  atraves da quantidade de pedidos.
 
 Caso 4: Quantos produtos existem em cada categoria?
+
 **Comando SQL:**
 
 SELECT
@@ -66,6 +69,7 @@ ORDER BY total_produtos DESC;
 **Objetivo:** Contar quantos produtos tem em cada categoria, incluindo os produtos que não possuem cadastro e ordenar os resultados em ordem decrescente pela quantidade.
 
 Caso 5: Quais clientes realizaram pedidos?
+
 **Comando SQL:**
 
 SELECT
@@ -81,6 +85,7 @@ ORDER BY p.data_pedido DESC;
 **Objetivo:** Consultar os clientes que realizaram pedidos com a exibição dos seus nomes, id dos pedidos, datas e os status, colocando em ordem do pedido mais recente para o mais antigo.
 
 Caso 6: Quais produtos aparecem nos pedidos e em quais quantidades?
+
 **Comando SQL:**
 
 SELECT
@@ -95,6 +100,7 @@ ORDER BY ip.id_pedido;
 **Objetivo:** Fazer a relação dos produtos aos seus respectivos pedidos, exibindo o nome do produto, o id do pedido e a quantas unidades de cada produto, ordenados pelo id do pedido.
 
 Caso 7: Quais clientes fizeram mais pedidos?
+
 **Comando SQL:**
 
 SELECT
